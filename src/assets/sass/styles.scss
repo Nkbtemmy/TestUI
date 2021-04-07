@@ -1,0 +1,258 @@
+$black: #000000;
+$white: #FFFFFF;
+$grey: #808080;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: "Roboto"
+}
+
+.footer{
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    font-size: 25px;
+    height: 8vh;
+    padding-top:3vh;
+}
+.login{
+    background-color: $white;
+    height: 92vh;
+
+    .loginCont{
+        position: absolute;
+        width: 30%;
+        height: 60vh;
+        z-index: 15;
+        top: 15%;
+        left: 35%;
+        margin: auto;
+        background: $white;
+        border-radius: 10px;
+        box-shadow:0px 0px 5px grey; 
+    }
+    .login100-form{
+        margin: 0 45px auto;
+    }
+}
+
+.wrap-input100 {
+  width: 90%;
+  position: relative;
+  margin: 10% 5% auto;
+  label{
+      color:$grey
+  }
+  input:focus {
+     border-style: none;
+     border-bottom: 2px solid $grey;
+  }
+}
+
+.input100 {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  height: 32px;
+  border-style: none;
+  border-bottom: 2px solid rgba(17, 16, 16, 0.24);
+  background: transparent;
+  padding: 0 5px 0 38px;
+
+}
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.login100-form-btn {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #f5eded;
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+   min-width: 98%;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #121113;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+//login-header
+.login100-form-title {
+  font-family: Poppins-Medium;
+  font-size: 30px;
+  color: $grey;
+  line-height: 1.2;
+  text-align: center;
+  display: block;
+  padding-top: 45px;
+}
+
+.navigation{
+  background-color: #ffffff;
+  height: 10vh;
+  border-style: none;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4);
+  .menu-icon {
+      line-height: 60px;
+      width: 10%;
+      text-align: left;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color:$black;
+   }
+   .profile{
+     background-color: $white;
+     box-shadow:2px 2px 5px grey; 
+     width: 15%;
+     height: 53px;
+     border-radius: 12px;
+     padding: 12px;
+     color: $white;
+     text-align: center;
+     position: absolute;
+     top: 2px;
+     right: 1%;
+     margin: 5px;
+     display: inline-block;
+   }
+}
+.profile:hover{
+        .logout{
+          display: block;
+        }
+     }
+
+
+.login100-form-logo{
+  display: flex;
+  color:$black;
+   
+   img{
+      
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      top: 2px;
+      left: 13px;
+      width: 50px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+    span{
+      position: relative;
+      left: 55px;
+    }
+}
+
+.logout{
+  display: none;
+  background-color: $white;
+  box-shadow:2px 2px 5px grey; 
+  position: relative;
+  top: 20px;
+  padding: 30px;
+  border-radius: 13px;
+  width: 100%;
+  button{
+    width: 100%;
+    background-color: $grey;
+    border-style: none;
+    border-radius: 13px;
+    margin: 4px;
+  }
+}
+//notification
+
+   .notification{
+     background-color: $grey;
+     width: 28%;
+     border-top-left-radius:12px;
+     border-top-right-radius:12px;
+     padding: 10px;
+     color: $white;
+     text-align: center;
+     position: fixed;
+     top: 2px;
+     left: 30%;
+   }
+//wallpaper
+
+.wallpaper{
+  background-color: $white;
+  padding: 15%;
+  font-weight:bold;
+  height: 82vh;
+  h1{
+    font-size: 60px;
+    color: rgb(51, 42, 42);
+    span{
+      color: darkgoldenrod;
+    }
+  }
+  button{
+    margin-top: 34px;
+    width: 18%;
+    border-radius: 10px;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .login{
+        .loginCont{
+            width: 70%;
+            left: 20%;
+        }
+    }
+    .notification{
+      width: 38%;
+      padding: 6px;
+      font-size: 15px;
+      top: 7px;
+    }
+         
+} 
+@media (max-width: 576px) {
+  .wrap-login100 {
+    padding: 55px 15px 37px 15px;
+  }
+}
