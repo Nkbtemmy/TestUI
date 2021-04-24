@@ -10,7 +10,8 @@ export default class Routers extends Component {
                  <Router >
                      <Switch>
                         <Route path="/" exact component={Login} />
-                        <Route path="/dashboard" exact component={dashboard} />      
+                        <Route path="/dashboard" exact component={dashboard} />  
+                        <Route path="*" component={Login} />  
                      </Switch>
                  </Router>                
             </div>
